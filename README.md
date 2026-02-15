@@ -1,141 +1,132 @@
-# 🚀 Welcome to Z.ai Code Scaffold
+<p align="center">
+  <img src="https://img.shields.io/badge/Version-2026-blue?style=for-the-badge" alt="Version">
+  <img src="https://img.shields.io/badge/Models-32+-green?style=for-the-badge" alt="Models">
+  <img src="https://img.shields.io/badge/Agents-9-orange?style=for-the-badge" alt="Agents">
+  <img src="https://img.shields.io/badge/License-MIT-purple?style=for-the-badge" alt="License">
+  <img src="https://img.shields.io/badge/Chinese%20Models-70%25-red?style=for-the-badge" alt="Chinese Models">
+</p>
 
-A modern, production-ready web application scaffold powered by cutting-edge technologies, designed to accelerate your development with [Z.ai](https://chat.z.ai)'s AI-powered coding assistance.
+<h1 align="center">⚡ Spark AI Builder</h1>
+<p align="center"><strong>Open Source Multi-Agent AI Development System</strong></p>
+<p align="center">Build production-ready software with 9 specialized AI agents powered by 32+ LLMs</p>
 
-## ✨ Technology Stack
+---
 
-This scaffold provides a robust foundation built with:
+## 🚀 What is Spark AI Builder?
 
-### 🎯 Core Framework
-- **⚡ Next.js 16** - The React framework for production with App Router
-- **📘 TypeScript 5** - Type-safe JavaScript for better developer experience
-- **🎨 Tailwind CSS 4** - Utility-first CSS framework for rapid UI development
+Spark AI Builder is a **FREE, Open Source** multi-agent AI system that builds complex, enterprise-ready software from natural language requirements. It coordinates multiple specialized AI agents to design, code, test, and deploy software automatically.
 
-### 🧩 UI Components & Styling
-- **🧩 shadcn/ui** - High-quality, accessible components built on Radix UI
-- **🎯 Lucide React** - Beautiful & consistent icon library
-- **🌈 Framer Motion** - Production-ready motion library for React
-- **🎨 Next Themes** - Perfect dark mode in 2 lines of code
+### Why Spark?
+- ✅ **100% Free & Open Source** - No subscription, no limits
+- ✅ **70% Chinese Models** - 10x cheaper than international alternatives
+- ✅ **9 Specialized Agents** - Architect, Backend, Frontend, Database, Security, etc.
+- ✅ **32+ LLM Support** - DeepSeek, Qwen, Kimi, GLM, GPT, Claude, Gemini, Grok
+- ✅ **Dynamic Model Registry** - Add any model in ONE CLICK, no code changes
+- ✅ **Ultra-Premium UI** - Billion-dollar SaaS look
 
-### 📋 Forms & Validation
-- **🎣 React Hook Form** - Performant forms with easy validation
-- **✅ Zod** - TypeScript-first schema validation
+---
 
-### 🔄 State Management & Data Fetching
-- **🐻 Zustand** - Simple, scalable state management
-- **🔄 TanStack Query** - Powerful data synchronization for React
-- **🌐 Fetch** - Promise-based HTTP request
+## 🤖 Supported Models
 
-### 🗄️ Database & Backend
-- **🗄️ Prisma** - Next-generation TypeScript ORM
-- **🔐 NextAuth.js** - Complete open-source authentication solution
+### 🇨🇳 Chinese Models (Primary - 70%)
 
-### 🎨 Advanced UI Features
-- **📊 TanStack Table** - Headless UI for building tables and datagrids
-- **🖱️ DND Kit** - Modern drag and drop toolkit for React
-- **📊 Recharts** - Redefined chart library built with React and D3
-- **🖼️ Sharp** - High performance image processing
+| Model | Provider | Best For | Price/1K |
+|-------|----------|----------|----------|
+| **DeepSeek V3.2** | DeepSeek | Coding, Algorithms | $0.0003 |
+| **DeepSeek R1** | DeepSeek | Deep Reasoning | $0.0005 |
+| **Qwen3-Max** | Alibaba | Enterprise, Code Gen | $0.0005 |
+| **Qwen3-Coder** | Alibaba | Full-stack, DevOps | $0.0004 |
+| **Kimi K2.5** | Moonshot AI | Ultra Long Context (2M) | $0.008 |
+| **GLM-5** | Zhipu AI | Open Source, General | $0.002 |
+| **Yi-Coder** | 01.AI | Dedicated Coding | $0.0003 |
+| **Doubao 2.0** | ByteDance | General Agent, Content | $0.003 |
+| **MiniMax m2.5** | MiniMax | Multimodal, Voice, Video | $0.005 |
 
-### 🌍 Internationalization & Utilities
-- **🌍 Next Intl** - Internationalization library for Next.js
-- **📅 Date-fns** - Modern JavaScript date utility library
-- **🪝 ReactUse** - Collection of essential React hooks for modern development
+### 🌍 International Models (Fallback - 30%)
 
-## 🎯 Why This Scaffold?
+| Model | Provider | Best For | Price/1K |
+|-------|----------|----------|----------|
+| **GPT-5.2** | OpenAI | Vision, Multimodal | $0.00175 |
+| **Claude Opus 4.6** | Anthropic | Code Review, Security | $0.005 |
+| **Gemini 3 Flash** | Google | Ultra Long Context | FREE |
+| **Grok 3** | xAI | Real-time Info | $0.002 |
 
-- **🏎️ Fast Development** - Pre-configured tooling and best practices
-- **🎨 Beautiful UI** - Complete shadcn/ui component library with advanced interactions
-- **🔒 Type Safety** - Full TypeScript configuration with Zod validation
-- **📱 Responsive** - Mobile-first design principles with smooth animations
-- **🗄️ Database Ready** - Prisma ORM configured for rapid backend development
-- **🔐 Auth Included** - NextAuth.js for secure authentication flows
-- **📊 Data Visualization** - Charts, tables, and drag-and-drop functionality
-- **🌍 i18n Ready** - Multi-language support with Next Intl
-- **🚀 Production Ready** - Optimized build and deployment settings
-- **🤖 AI-Friendly** - Structured codebase perfect for AI assistance
+---
 
 ## 🚀 Quick Start
 
 ```bash
+# Clone repository
+git clone https://github.com/apnapriyanshu/Spark.git
+cd Spark
+
 # Install dependencies
 bun install
 
 # Start development server
 bun run dev
-
-# Build for production
-bun run build
-
-# Start production server
-bun start
 ```
 
-Open [http://localhost:3000](http://localhost:3000) to see your application running.
+Open [http://localhost:3000](http://localhost:3000) to see your application.
 
-## 🤖 Powered by Z.ai
+---
 
-This scaffold is optimized for use with [Z.ai](https://chat.z.ai) - your AI assistant for:
+## 🎯 Key Features
 
-- **💻 Code Generation** - Generate components, pages, and features instantly
-- **🎨 UI Development** - Create beautiful interfaces with AI assistance  
-- **🔧 Bug Fixing** - Identify and resolve issues with intelligent suggestions
-- **📝 Documentation** - Auto-generate comprehensive documentation
-- **🚀 Optimization** - Performance improvements and best practices
+| Feature | Description |
+|---------|-------------|
+| **Multi-LLM Routing** | Auto-selects best model for each task |
+| **9 AI Agents** | Specialized experts working together |
+| **Dynamic Registry** | Add any model via YAML config or API |
+| **Security Scanner** | Built-in OWASP vulnerability detection |
+| **Live Preview** | Real-time preview with device toggle |
+| **Dark/Light Mode** | Beautiful theme system |
 
-Ready to build something amazing? Start chatting with Z.ai at [chat.z.ai](https://chat.z.ai) and experience the future of AI-powered development!
+---
 
 ## 📁 Project Structure
 
 ```
-src/
-├── app/                 # Next.js App Router pages
-├── components/          # Reusable React components
-│   └── ui/             # shadcn/ui components
-├── hooks/              # Custom React hooks
-└── lib/                # Utility functions and configurations
+Spark/
+├── spark/
+│   ├── core/                   # Core AI system
+│   ├── agents/                 # 9 specialized agents
+│   └── api/                    # REST API endpoints
+├── config/
+│   ├── models.yaml             # Model configurations
+│   └── user_models.yaml        # Custom models
+├── src/app/                    # Next.js UI
+│   ├── page.tsx                # Dashboard
+│   └── api/models/             # Model API
+└── README.md
 ```
-
-## 🎨 Available Features & Components
-
-This scaffold includes a comprehensive set of modern web development tools:
-
-### 🧩 UI Components (shadcn/ui)
-- **Layout**: Card, Separator, Aspect Ratio, Resizable Panels
-- **Forms**: Input, Textarea, Select, Checkbox, Radio Group, Switch
-- **Feedback**: Alert, Toast (Sonner), Progress, Skeleton
-- **Navigation**: Breadcrumb, Menubar, Navigation Menu, Pagination
-- **Overlay**: Dialog, Sheet, Popover, Tooltip, Hover Card
-- **Data Display**: Badge, Avatar, Calendar
-
-### 📊 Advanced Data Features
-- **Tables**: Powerful data tables with sorting, filtering, pagination (TanStack Table)
-- **Charts**: Beautiful visualizations with Recharts
-- **Forms**: Type-safe forms with React Hook Form + Zod validation
-
-### 🎨 Interactive Features
-- **Animations**: Smooth micro-interactions with Framer Motion
-- **Drag & Drop**: Modern drag-and-drop functionality with DND Kit
-- **Theme Switching**: Built-in dark/light mode support
-
-### 🔐 Backend Integration
-- **Authentication**: Ready-to-use auth flows with NextAuth.js
-- **Database**: Type-safe database operations with Prisma
-- **API Client**: HTTP requests with Fetch + TanStack Query
-- **State Management**: Simple and scalable with Zustand
-
-### 🌍 Production Features
-- **Internationalization**: Multi-language support with Next Intl
-- **Image Optimization**: Automatic image processing with Sharp
-- **Type Safety**: End-to-end TypeScript with Zod validation
-- **Essential Hooks**: 100+ useful React hooks with ReactUse for common patterns
-
-## 🤝 Get Started with Z.ai
-
-1. **Clone this scaffold** to jumpstart your project
-2. **Visit [chat.z.ai](https://chat.z.ai)** to access your AI coding assistant
-3. **Start building** with intelligent code generation and assistance
-4. **Deploy with confidence** using the production-ready setup
 
 ---
 
-Built with ❤️ for the developer community. Supercharged by [Z.ai](https://chat.z.ai) 🚀
+## 💖 Support the Project
+
+Spark AI Builder is **100% free and open source**. If this project helps you, consider supporting the founder:
+
+### 💰 Donate Crypto
+
+| Network | Address |
+|---------|---------|
+| **USDT (BEP20)** | `0x5411920bb3325e49447484c22fb17b8052444ea6` |
+| **BTC (BTC Chain)** | `3QMGi2wtsa8MMrDuo7fTRypxSi5rGmGJj1` |
+| **SOL (Solana)** | `G3pedCQ5yYPhLq7NYYYBuKXFHWiM76kGESLt1g8K2hFf` |
+
+### ⭐ Star the Repo
+
+If you find Spark useful, please give it a star on GitHub!
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License.
+
+---
+
+<p align="center">
+  <strong>Built with ❤️ by the Spark AI Team</strong>
+</p>
