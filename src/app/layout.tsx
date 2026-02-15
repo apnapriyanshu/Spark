@@ -19,7 +19,8 @@ export const metadata: Metadata = {
   keywords: ["Spark AI", "AI Builder", "Next.js", "TypeScript", "Tailwind CSS", "shadcn/ui", "AI development", "React", "DeepSeek", "Qwen", "Kimi", "GLM", "Multi-Agent"],
   authors: [{ name: "Spark AI Team" }],
   icons: {
-    icon: "/favicon.ico",
+    icon: "/favicon.svg",
+    apple: "/favicon.svg",
   },
   openGraph: {
     title: "Spark AI Builder - Open Source Multi-Agent AI System",

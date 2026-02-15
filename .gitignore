@@ -32,6 +32,7 @@ yarn-error.log*
 
 # env files (can opt-in for committing if needed)
 .env*
+!.env.example
 
 # vercel
 .vercel
@@ -43,9 +44,35 @@ local-*
 .claude
 .z-ai-config
 dev.log
+server.log
+
+# test & prompt
 test
 prompt
 
-server.log
+# Download folder - binary artifacts
+/download/
+
+# Database files
+*.db
+*.db-journal
+db/
+
 # Skills directory
 /skills/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+Thumbs.db
+
+# Logs
+logs/
+*.log
+
+# Spark submodule (if needed as separate repo)
+Spark/
