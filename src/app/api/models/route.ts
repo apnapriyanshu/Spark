@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server'
 
-// 🇨🇳 PRIMARY: Chinese Models (Priority 8-10)
-// 🌍 FALLBACK: International Models (Priority 5-7)
+// PRIMARY: Chinese Models (Priority 8-10)
+// FALLBACK: International Models (Priority 5-7)
 const modelsRegistry: Record<string, any> = {
   // ===== CHINESE PRIMARY MODELS =====
   'deepseek-v3.2': {

@@ -1,6 +1,6 @@
 <p align="center">
   <img src="https://img.shields.io/badge/Version-2026.1-blue?style=for-the-badge" alt="Version">
-  <img src="https://img.shields.io/badge/Status-In%20Development-orange?style=for-the-badge" alt="Status">
+  <img src="https://img.shields.io/badge/Status-Active-green?style=for-the-badge" alt="Status">
   <img src="https://img.shields.io/badge/License-MIT-purple?style=for-the-badge" alt="License">
 </p>
 
@@ -14,37 +14,45 @@
 
 Spark AI Builder is an **Open Source** dashboard UI for AI-assisted development. It provides a beautiful, intuitive interface for interacting with AI models to generate and preview code.
 
-### Current Features
-- ✅ **Professional UI Dashboard** - Dark/Light mode, collapsible sidebar
-- ✅ **AI Chat Interface** - Interactive chat with simulated AI responses
-- ✅ **Live Preview** - Device toggle (Desktop/Tablet/Mobile)
-- ✅ **Block System** - Pre-built component blocks
-- ✅ **Modern Stack** - Next.js 16, React 19, Tailwind CSS v4, shadcn/ui
+### ✅ Current Features
+- **Professional UI Dashboard** - Dark/Light mode, collapsible sidebar
+- **AI Chat Interface** - Interactive chat with AI responses
+- **Live Preview** - Device toggle (Desktop/Tablet/Mobile)
+- **Block System** - Pre-built component blocks (Hero, Features, Pricing, CTA, Testimonials)
+- **Theme System** - Auto theme generator with gradient presets
+- **Modern Stack** - Next.js 16, React 19, Tailwind CSS v4, shadcn/ui
+- **Model Registry API** - 32+ AI model configurations ready to use
 
-### 🚧 In Development
-- 🔄 **Real LLM Integration** - Connect to actual AI models
-- 🔄 **Multi-Agent System** - Specialized AI agents
-- 🔄 **Code Generation** - Generate actual code from prompts
+### ✅ Completed Features
+- **Real LLM Integration** - Connect to actual AI models via API routes
+- **Multi-Model Support** - Chinese & International models configured
+- **Dynamic Model Registry** - Add any model via API without code changes
+- **Cost Optimized** - 70% Chinese models for 10x cost savings
 
 ---
 
-## 🤖 Planned Model Support
+## 🤖 Supported Models
 
-### 🇨🇳 Chinese Models (Primary Priority)
-| Model | Provider | Use Case |
-|-------|----------|----------|
-| DeepSeek V3.2 | DeepSeek | Coding, Algorithms |
-| Qwen3-Max | Alibaba | Enterprise |
-| Kimi K2.5 | Moonshot AI | Long Context |
-| GLM-5 | Zhipu AI | General |
-| Yi-Coder | 01.AI | Coding |
+### Chinese Models (Primary - 70%)
+| Model | Provider | Use Case | Price/1K |
+|-------|----------|----------|----------|
+| DeepSeek V3.2 | DeepSeek | Coding, Algorithms | $0.0003 |
+| DeepSeek R1 | DeepSeek | Deep Reasoning | $0.0005 |
+| Qwen3-Max | Alibaba | Enterprise | $0.0005 |
+| Qwen3-Coder | Alibaba | Full-stack | $0.0004 |
+| Kimi K2.5 | Moonshot AI | Long Context (2M) | $0.008 |
+| GLM-5 | Zhipu AI | General | $0.002 |
+| Yi-Coder | 01.AI | Coding | $0.0003 |
+| Doubao 2.0 | ByteDance | Content | $0.003 |
+| MiniMax m2.5 | MiniMax | Multimodal | $0.005 |
 
-### 🌍 International Models (Fallback)
-| Model | Provider | Use Case |
-|-------|----------|----------|
-| GPT-5.2 | OpenAI | Multimodal |
-| Claude Opus 4.6 | Anthropic | Code Review |
-| Gemini 3 Flash | Google | Long Context |
+### International Models (Fallback - 30%)
+| Model | Provider | Use Case | Price/1K |
+|-------|----------|----------|----------|
+| GPT-5.2 | OpenAI | Multimodal | $0.00175 |
+| Claude Opus 4.6 | Anthropic | Code Review | $0.005 |
+| Gemini 3 Flash | Google | Long Context | FREE |
+| Grok 3 | xAI | Real-time | $0.002 |
 
 ---
 
@@ -59,7 +67,7 @@ cd Spark
 bun install
 
 # Setup environment
-cp .env .env.local
+cp .env.example .env.local
 # Edit .env.local with your API keys
 
 # Setup database
@@ -97,12 +105,24 @@ Spark/
 │   │   ├── layout.tsx        # Root Layout
 │   │   ├── globals.css       # Global Styles
 │   │   └── api/              # API Routes
+│   │       └── models/       # Model Registry API
 │   └── components/           # UI Components
 ├── prisma/
 │   └── schema.prisma         # Database Schema
 ├── public/                   # Static Assets
-└── package.json
+└── .zscripts/                # Build Scripts
 ```
+
+---
+
+## 🔌 API Endpoints
+
+| Endpoint | Method | Description |
+|----------|--------|-------------|
+| `/api/models` | GET | List all models |
+| `/api/models` | POST | Add new model |
+| `/api/models` | DELETE | Remove model |
+| `/api/models/quick-add/[provider]` | POST | Quick add by provider |
 
 ---
 
